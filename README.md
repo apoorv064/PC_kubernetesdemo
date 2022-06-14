@@ -32,8 +32,16 @@ RUNNING HELM CHARTS
 HELM DEPLOYMENT NOT RUNNING : Pod Failed due to CrashLoopBackOff
 
 kubectl delete deployment postgres
+
 helm install -f kanban-postgres.yaml postgres ./postgres
 
 Err: cannot re-use a name that is still in use
+
 Res: delete helm release as well
+
+ERROR "Pod Failed due to CrashLoopBackOff" PERSISTENT
+
+![image](https://user-images.githubusercontent.com/53597532/173530473-2a95e102-b1ac-4209-9cb0-732c65b924a8.png)
+
+CHANGED storage in values.yaml from 4Gi to 1Gi, image from postgres:9.6-alpine to postgres
 
