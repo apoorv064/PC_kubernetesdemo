@@ -25,3 +25,15 @@ WARNING: Kubernetes configuration file is world-readable. This is insecure. Loca
 
 Res: chmod 600 home/privatecircle/.kube/config
       
+RUNNING HELM CHARTS
+
+![image](https://user-images.githubusercontent.com/53597532/173527107-942bb2ae-af09-4f48-8474-be59480d6d8e.png)
+
+HELM DEPLOYMENT NOT RUNNING : Pod Failed due to CrashLoopBackOff
+
+kubectl delete deployment postgres
+helm install -f kanban-postgres.yaml postgres ./postgres
+
+Err: cannot re-use a name that is still in use
+Res: delete helm release as well
+
