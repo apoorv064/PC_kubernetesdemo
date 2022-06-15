@@ -60,5 +60,5 @@ WORKING SOLUTION: ADDED KEY-VALUE PAIR IN ConfigMap (kanban-postgres.yaml)
 - key: PGDATA
         value: /var/lib/postgresql/data/pgdata
         
-RCA ---> set the mount point path and the data path to be the same dir; data directory should be set to subdir -> set values in configmap for the same
+RCA ---> earlier we had set the mount point path and the data path to be the same dir; data directory should be set to subdir -> set values in configmap for the same
 
