@@ -60,8 +60,25 @@ REFRENCE https://serverfault.com/questions/1018377/postgres-mount-volume-error-i
 
 WORKING SOLUTION: ADDED KEY-VALUE PAIR IN ConfigMap (kanban-postgres.yaml)
 
-- key: PGDATA
+      - key: PGDATA
+
         value: /var/lib/postgresql/data/pgdata
         
 RCA ---> earlier we had set the mount point path and the data path to be the same dir; data directory should be set to subdir -> set values in configmap for the same
+
+DEPLOYED Postgres
+
+DEPLOYED kanban-app
+
+DEPLOYED kanban-ui
+
+DEPLOYED adminer
+
+![image](https://user-images.githubusercontent.com/53597532/173891387-6ee48ac6-1710-4e7b-92a4-e9e6c5a2f825.png)
+
+
+ERROR: INGRESS DEPLOYMENT FAILED
+
+![image](https://user-images.githubusercontent.com/53597532/173891640-fcb8bd34-ecb6-485b-9c6b-dd7ac8c13e18.png)
+
 
