@@ -25,11 +25,14 @@ WARNING: Kubernetes configuration file is world-readable. This is insecure. Loca
 
 Res: chmod 600 home/privatecircle/.kube/config
       
-RUNNING HELM CHARTS
+**RUNNING HELM CHARTS**
+
+DOC: https://wkrzywiec.medium.com/how-to-deploy-application-on-kubernetes-with-helm-39f545ad33b8
+GitHub: https://github.com/wkrzywiec/k8s-helm-helmfile/tree/master/helm
 
 ![image](https://user-images.githubusercontent.com/53597532/173527107-942bb2ae-af09-4f48-8474-be59480d6d8e.png)
 
-HELM DEPLOYMENT NOT RUNNING : Pod Failed due to CrashLoopBackOff
+HELM POSTGRES DEPLOYMENT NOT RUNNING : Pod Failed due to CrashLoopBackOff
 
 kubectl delete deployment postgres
 
