@@ -43,5 +43,22 @@ ERROR "Pod Failed due to CrashLoopBackOff" PERSISTENT
 
 ![image](https://user-images.githubusercontent.com/53597532/173530473-2a95e102-b1ac-4209-9cb0-732c65b924a8.png)
 
-CHANGED storage in values.yaml from 4Gi to 1Gi, image from postgres:9.6-alpine to postgres
+DEBUGS:
+
+1. CHANGED storage in values.yaml from 4Gi to 1Gi, image from postgres:9.6-alpine to postgres (didnt work)
+
+2. ADDED volumeMount subPath to PersistentVolume for Postgres container (didnt work)
+
+REFERENCE https://stackoverflow.com/questions/51168558/how-to-mount-a-postgresql-volume-using-aws-ebs-in-kubernete
+
+3. ADDED EnvFromSource env vars in deployment.yaml by removing ConfigMapRef (deployment failed directly) 
+
+REFRENCE https://serverfault.com/questions/1018377/postgres-mount-volume-error-in-k8s
+
+WORKING SOLUTION: ADDED KEY-VALUE PAIR IN ConfigMap (kanban-postgres.yaml)
+
+- key: PGDATA
+        value: /var/lib/postgresql/data/pgdata
+        
+RCA ---> set the mount point path and the data path to be the same dir; data directory should be set to subdir -> set values in configmap for the same
 
