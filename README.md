@@ -87,5 +87,12 @@ ASSUMPTION: Didn't add any hosts in /etc/hosts file, ingress routing will fail a
 
 **HELMFILE DEPLOYMENTS**
 
+Deploying same kanban app-stack using helmfile 
 
-https://itnext.io/setup-your-kubernetes-cluster-with-helmfile-809828bc0a9f
+https://medium.com/swlh/how-to-declaratively-run-helm-charts-using-helmfile-ac78572e6088
+
+ERROR: 
+
+![image](https://user-images.githubusercontent.com/53597532/174021833-846129b6-1321-4bd8-a804-7b20fa3c2703.png)
+
+ASSUMPTION: Ingress deployment fails with both helm and helmfile; don't have access from my namespace to fetch RBAC roles
