@@ -82,3 +82,10 @@ ERROR: INGRESS DEPLOYMENT FAILED
 ![image](https://user-images.githubusercontent.com/53597532/173891640-fcb8bd34-ecb6-485b-9c6b-dd7ac8c13e18.png)
 
 
+ASSUMPTION: Didn't add any hosts in /etc/hosts file, ingress routing will fail as localhost
+
+
+**HELMFILE DEPLOYMENTS**
+
+
+https://itnext.io/setup-your-kubernetes-cluster-with-helmfile-809828bc0a9f
