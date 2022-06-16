@@ -96,3 +96,9 @@ ERROR:
 ![image](https://user-images.githubusercontent.com/53597532/174021833-846129b6-1321-4bd8-a804-7b20fa3c2703.png)
 
 ASSUMPTION: Ingress deployment fails with both helm and helmfile; don't have access from my namespace to fetch RBAC roles
+
+-------PROMETHEUS STACK USING HELM------------
+
+ADDED helm charts to helm repo
+
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
