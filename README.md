@@ -114,4 +114,11 @@ Installed helm chart
 
 kube-prometheus-stack deployed
 
+ERROR: No response while port-forwarding
+ASSUMPTION: Inbound, ooutbound ports not opened from VM; since getting curl response
+
+      kubectl port-forward -n prom pod/prometheus-prometheus-kube-prometheus-prometheus-0 9090
+      
+<img width="352" alt="image" src="https://user-images.githubusercontent.com/53597532/174552482-58675870-6b95-44e1-8505-aa1fcdbb057b.png">
+
 
