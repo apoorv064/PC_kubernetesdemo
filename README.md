@@ -102,3 +102,16 @@ ASSUMPTION: Ingress deployment fails with both helm and helmfile; don't have acc
 ADDED helm charts to helm repo
 
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+
+Created namespace "prom" for prometheus-monitoring stack
+
+Installed helm chart
+
+      helm install prometheus prometheus-community/kube-prometheus-stack -n prom
+      
+<img width="784" alt="image" src="https://user-images.githubusercontent.com/53597532/174551265-3aa9d9af-1988-40e9-afce-f9dc03fb701d.png">
+
+
+kube-prometheus-stack deployed
+
+
