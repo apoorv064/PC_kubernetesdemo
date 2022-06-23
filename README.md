@@ -140,3 +140,12 @@ DEBUG:
 3. Allowed specific ports using UFW
 
             sudo ufw allow 9090/tcp
+
+**HELMFILE TASKS**
+
+Learning to configure standalone preview environments using Helmfile:
+
+deploying few of below helmfiles
+
+https://github.com/cloudposse/helmfiles/tree/master/releases
+
