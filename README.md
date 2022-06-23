@@ -121,4 +121,22 @@ ASSUMPTION: Inbound, ooutbound ports not opened from VM; since getting curl resp
       
 <img width="352" alt="image" src="https://user-images.githubusercontent.com/53597532/174552482-58675870-6b95-44e1-8505-aa1fcdbb057b.png">
 
+**USING FIREWALLS TO MANAGE PORTS IN HHOST VM**
 
+LEARNING FIREWALLS, PROXIES AND IPTABLES - UFW
+
+<img width="478" alt="image" src="https://user-images.githubusercontent.com/53597532/175221093-874935bc-1782-4058-ad67-43cc850600aa.png">
+
+DEBUG: 
+
+1. Allowed connections from my IPv4  (didnt work) -- UFW and any firewall proxy requires IPv6
+      
+        sudo ufw allow from 182.64.181.47
+
+2. SSH TUNNEL (didn't work)
+      
+            ssh -N -L 9090:localhost:9090 privatecircle@172.105.63.45 
+
+3. Allowed specific ports using UFW
+
+            sudo ufw allow 9090/tcp
