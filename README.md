@@ -149,3 +149,9 @@ deploying few of below helmfiles
 
 https://github.com/cloudposse/helmfiles/tree/master/releases
 
+
+KUBERNETES DASHBOARD depoyment with HELMFILE
+
+Configured defaults.yaml, environments.yaml (with just one default env), helmfile.yaml to access k8s dashboard (similar to minikube dashboard for local)
+
+ERR: <img width="960" alt="image" src="https://user-images.githubusercontent.com/53597532/175878005-0bf3000b-5d19-456a-872d-ab88f66e2b30.png">
