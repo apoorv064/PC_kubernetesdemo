@@ -157,3 +157,8 @@ Configured defaults.yaml, environments.yaml (with just one default env), helmfil
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/53597532/175878005-0bf3000b-5d19-456a-872d-ab88f66e2b30.png">
 
 ERR: error with key-value pair in map (defaults.yaml)
+
+
+**UPDATE ON UFW PORT-FORWARDING**
+
+Res: UFW port forwarding only exposes localhost services; hence Cluster IP services HAVE TO be exposed locally using ingress, THEN THOSE PORTS CAN BE FORWARDED AND ACCESSED USING UFW
