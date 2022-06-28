@@ -162,3 +162,16 @@ ERR: error with key-value pair in map (defaults.yaml)
 **UPDATE ON UFW PORT-FORWARDING**
 
 Res: UFW port forwarding only exposes localhost services; hence Cluster IP services HAVE TO be exposed locally using ingress, THEN THOSE PORTS CAN BE FORWARDED AND ACCESSED USING UFW
+
+
+*Installed node-exporter, exposed to 9100
+*Installed prometheus, changed configuration to connect to my Grafana subscription
+
+<img width="759" alt="image" src="https://user-images.githubusercontent.com/53597532/176177725-37cb5106-1724-444b-9cdc-e7580fbc4f40.png">
+
+Grafana now recieving all metrics from Linux node
+
+PS: See job-name appearing as "prometheus-node", what we specified in prometheus.yml earlier
+
+<img width="951" alt="image" src="https://user-images.githubusercontent.com/53597532/176178211-462b164d-6343-4a48-8696-24080fa33d16.png">
+
