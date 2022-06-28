@@ -165,6 +165,7 @@ Res: UFW port forwarding only exposes localhost services; hence Cluster IP servi
 
 
 *Installed node-exporter, exposed to 9100
+
 *Installed prometheus, changed configuration to connect to my Grafana subscription
 
 <img width="759" alt="image" src="https://user-images.githubusercontent.com/53597532/176177725-37cb5106-1724-444b-9cdc-e7580fbc4f40.png">
@@ -175,3 +176,6 @@ PS: See job-name appearing as "prometheus-node", what we specified in prometheus
 
 <img width="951" alt="image" src="https://user-images.githubusercontent.com/53597532/176178211-462b164d-6343-4a48-8696-24080fa33d16.png">
 
+ISSUE: Metrics exporting stops as soon as Prometheus binary stops running (terminated)
+
+RES: created a prometheus service file and enabled it so metrics exported continously.
