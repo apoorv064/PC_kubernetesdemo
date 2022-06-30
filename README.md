@@ -179,3 +179,7 @@ PS: See job-name appearing as "prometheus-node", what we specified in prometheus
 ISSUE: Metrics exporting stops as soon as Prometheus binary stops running (terminated)
 
 RES: created a prometheus service file and enabled it so metrics exported continously.
+
+**DEPLOYING EFK STACK USING HELM CHARTS**
+
+https://kamrul.dev/deploy-efk-stack-with-helm-3-in-kubernetes/
