@@ -182,4 +182,12 @@ RES: created a prometheus service file and enabled it so metrics exported contin
 
 **DEPLOYING EFK STACK USING HELM CHARTS**
 
-https://kamrul.dev/deploy-efk-stack-with-helm-3-in-kubernetes/
+https://github.com/cdwv/efk-stack-helm
+
+ERR: validation: chart.metadata.version is required
+
+RES: FIXED chart templates by upgrading to newer API versions 
+
+https://kubernetes.io/blog/2019/07/18/api-deprecations-in-1-16/
+
+Creating helmfiles to deploy EFK helm chart declaratively for various dummy envs.
